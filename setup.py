@@ -13,6 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+from sys import _version_info
 from setuptools import find_packages, setup
 
 # This reads the __version__ variable from tensornetwork/version.py
@@ -33,7 +34,7 @@ requirements = [
 
 setup(
     name='tensornetwork',
-    version=__version__,
+    version=_version_info,
     url='http://github.com/google/TensorNetwork',
     author='The TensorNetwork Developers',
     author_email='martin.ganahl@gmail.com',
